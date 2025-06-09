@@ -1,0 +1,46 @@
+#Cria um novo database
+create database db_controle_filmes;
+#Ativa o database a ser utilizado
+use db_controle_filmes;
+#Criação da tabela de filme
+create table tbl_filme (
+id int not null primary key auto_increment,
+nome varchar(80) not null,
+duracao time not null,
+sinopse text not null,
+data_lancamento date not null,
+foto_capa varchar(200)
+);
+#ScriptSQL para inserir dados no Banco de dados
+INSERT INTO tbl_filme (nome, duracao, sinopse, data_lancamento, foto_capa) VALUES
+('O Poderoso Chefão', '02:55', 'Um épico da máfia que segue a história da família Corleone.', '1972-03-24', 'https://example.com/poderoso_chefao.jpg'),
+('Cidadão Kane', '01:59', 'A vida e o legado do magnata da imprensa Charles Foster Kane.', '1941-05-01', 'https://example.com/cidadao_kane.jpg'),
+('Pulp Fiction', '02:34', 'Histórias interligadas de criminosos em Los Angeles.', '1994-10-14', 'https://example.com/pulp_fiction.jpg'),
+('Clube da Luta', '02:19', 'Um homem insone cria um clube secreto de luta.', '1999-10-15', 'https://example.com/clube_da_luta.jpg'),
+('Forrest Gump', '02:22', 'A incrível vida de Forrest Gump, um homem de bom coração.', '1994-07-06', 'https://example.com/forrest_gump.jpg'),
+('Matrix', '02:16', 'Um programador descobre a verdade sobre sua realidade.', '1999-03-31', 'https://example.com/matrix.jpg'),
+('Interestelar', '02:49', 'Uma jornada espacial em busca da sobrevivência da humanidade.', '2014-11-07', 'https://example.com/interestelar.jpg'),
+('A Origem', '02:28', 'Um ladrão que rouba segredos através dos sonhos.', '2010-07-16', 'https://example.com/a_origem.jpg'),
+('Os Vingadores', '02:23', 'Heróis se unem para salvar o planeta de ameaças.', '2012-05-04', 'https://example.com/os_vingadores.jpg'),
+('O Senhor dos Anéis: A Sociedade do Anel', '02:58', 'A primeira parte da jornada para destruir o Anel.', '2001-12-19', 'https://example.com/senhor_aneis_sociedade.jpg'),
+('O Iluminado', '02:26', 'Um escritor enlouquece em um hotel isolado.', '1980-05-23', 'https://example.com/o_iluminado.jpg'),
+('Gladiador', '02:35', 'Um general romano busca vingança após ser traído.', '2000-05-05', 'https://example.com/gladiador.jpg'),
+('Titanic', '03:15', 'Uma história de amor a bordo do trágico navio Titanic.', '1997-12-19', 'https://example.com/titanic.jpg'),
+('O Cavaleiro das Trevas', '02:32', 'Batman enfrenta o Coringa em Gotham.', '2008-07-18', 'https://example.com/cavaleiro_trevas.jpg'),
+('Star Wars: Uma Nova Esperança', '02:01', 'A jornada de Luke Skywalker contra o Império.', '1977-05-25', 'https://example.com/star_wars_nova_esperanca.jpg'),
+('De Volta para o Futuro', '01:56', 'Um jovem viaja no tempo e muda seu destino.', '1985-07-03', 'https://example.com/de_volta_futuro.jpg'),
+('O Exorcista', '02:02', 'Uma garota possuída e um padre tentando salvá-la.', '1973-12-26', 'https://example.com/o_exorcista.jpg'),
+('A Lista de Schindler', '03:15', 'A emocionante história de um homem que salvou judeus na Segunda Guerra Mundial.', '1993-12-15', 'https://example.com/lista_schindler.jpg'),
+('Clube dos Cinco', '01:37', 'Cinco adolescentes passam um sábado juntos na detenção.', '1985-02-15', 'https://example.com/clube_cinco.jpg'),
+('Os Bons Companheiros', '02:26', 'A ascensão e queda de um mafioso em Nova York.', '1990-09-19', 'https://example.com/bons_companheiros.jpg'),
+('O Silêncio dos Inocentes', '01:58', 'Um serial killer ajuda uma agente do FBI a capturar outro.', '1991-02-14', 'https://example.com/silencio_inocentes.jpg'),
+('Coração Valente', '02:58', 'A luta de William Wallace pela liberdade da Escócia.', '1995-05-24', 'https://example.com/coracao_valente.jpg'),
+('Os Infiltrados', '02:31', 'Um policial infiltrado e um criminoso infiltrado no departamento de polícia.', '2006-10-06', 'https://example.com/os_infiltrados.jpg'),
+('O Resgate do Soldado Ryan', '02:49', 'Uma missão para resgatar um soldado na Segunda Guerra.', '1998-07-24', 'https://example.com/resgate_soldado_ryan.jpg'),
+('A Vida é Bela', '01:56', 'Um pai faz de tudo para proteger seu filho durante o Holocausto.', '1997-12-20', 'https://example.com/a_vida_e_bela.jpg'),
+('Django Livre', '02:45', 'Um ex-escravo busca vingança no Velho Oeste.', '2012-12-25', 'https://example.com/django_livre.jpg'),
+('Toy Story', '01:21', 'Brinquedos ganham vida quando os humanos não estão por perto.', '1995-11-22', 'https://example.com/toy_story.jpg'),
+('O Lobo de Wall Street', '03:00', 'A ascensão e queda de um corretor da bolsa.', '2013-12-25', 'https://example.com/lobo_wall_street.jpg'),
+('A Viagem de Chihiro', '02:05', 'Uma garota fica presa em um mundo mágico e tenta encontrar seus pais.', '2001-07-20', 'https://example.com/viagem_chihiro.jpg'),
+('Whiplash', '01:47', 'Um jovem baterista enfrenta um professor implacável.', '2014-10-10', 'https://example.com/whiplash.jpg'),
+('Cisne Negro', '01:48', 'Uma bailarina enfrenta desafios físicos e psicológicos para protagonizar um espetáculo.', '2010-12-03', 'https://example.com/cisne_negro.jpg');
